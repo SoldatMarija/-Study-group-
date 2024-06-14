@@ -1,7 +1,6 @@
 describe('Challenge3', () => {
-
+  
     it('First test case', () => {
-      
      cy.visit('https://work.co/')
      cy.get('[class="Header3 Page-title"]').should('contain', 'Introduction')
      cy.get('[data-test-id="header-title-text"]').should('contain', 'We solve complex problems through design & technology')

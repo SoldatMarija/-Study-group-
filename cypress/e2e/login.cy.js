@@ -15,7 +15,7 @@ describe('Challenge4', () => {
       cy.url().should('eq', 'https://www.saucedemo.com/')
     })
 
-    it.only('Third test case', () => {
+    it('Third test case', () => {
         cy.get('.form_group').find('[data-test="username"]').type('standard_user').click()
         cy.get('.form_group').find('[data-test="password"]').type('secret_sauce').click()
         cy.get('[data-test="login-button"]').click()
